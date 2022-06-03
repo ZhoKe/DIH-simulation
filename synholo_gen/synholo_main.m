@@ -5,13 +5,13 @@
 clear;clc;
 % define particle field properties
 Nf = 1; % numer of frames
-Obj.enlargement = 2; % times that the holo being enlarged for accurate FFT
+Obj.enlargement = 4; % times that the holo being enlarged for accurate FFT
 Obj.Supersmpl = 3; % supersampling rate of the obj and holo plane
 Obj.size_obj = 256; % 256 descretization of the Obj, mesh refinement by a factor of "Supersmpl"
 Obj.resolution = 5; % 5um/pixl; the SAME for both the obj and holo planes
 Obj.dz = 5; % 5um/pixl; the SAME for both the obj and holo planes
-Obj.z0 = 10e3; % 1e3 um, the distance from the hologram to the particle field center
-Obj.Lz = 1280; % 1.6e3 um, depth of the measurement domain
+Obj.z0 = 10e3; % um, the distance from the hologram to the particle field center
+Obj.Lz = 1280; % um, depth of the measurement domain
 Obj.n = 1; % refractive index
 Obj.wavelength0 = 0.632; % um,  in the vacuum
 Obj.rp = 4; %um, particle radius, note: diameter(2*rp) > resolution should be satisfied
